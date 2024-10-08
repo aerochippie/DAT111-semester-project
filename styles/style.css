@@ -28,6 +28,24 @@ body {
     background-color: #f1f0ee;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 0.5em;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
 
 /***                repeating styles           ***/
 nav {
@@ -199,12 +217,6 @@ footer {
     font-weight: 200;
 }
 
-.description_right h1 {
-    flex-direction: column;
-    font-weight: 600;
-    padding-bottom: 0.5em;
-}
-
 .container_cards {
     display: flex;
     flex-direction: column;
@@ -267,11 +279,6 @@ footer {
     transition-delay: .2s;
 }
 
-.container_cards .card h2 {
-    font-size: 2em;
-    font-weight: 600;
-    padding-bottom: 0.5em;
-}
 .card_background {
     overflow: hidden;
     background-size: cover;
@@ -282,11 +289,11 @@ footer {
     width: 600px;
     margin: auto;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
-    font-weight: 300;
     padding-bottom: 1.5em;
 }
+
 .container_cards .card .card_content a {
-    text-decoration: none;
+
     color: var(--dark-green);
     font-weight: 600;
     background-color: #d8d8d8;
@@ -296,6 +303,7 @@ footer {
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
 }
+
 .container_cards .card .card_content a:hover {
     background-color: #06261ee1;
     color: var(--white);
@@ -321,8 +329,7 @@ footer {
 }
 
 .banner h3 {
-    font-size: 2em;
-    font-weight: 600;
+    padding-bottom: 0;
 }
 
 .banner_content {
@@ -337,7 +344,6 @@ footer {
 .banner a {
     background-color: var(--white);
     padding: 1em;
-    text-decoration: none;
     color: var(--dark-green);
     border-radius: 10px;
     text-align: center;
@@ -404,7 +410,7 @@ footer {
     opacity: 66%;
 }
 
-.team_container{
+.team_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,68 +419,69 @@ footer {
 
 }
 
-.team_container h1{
-font-size: 3em;
-margin: 1em;
-color: var(--dark-green);
+.team_container h1 {
+    margin: 1em;
+    color: var(--dark-green);
 
 }
 
-.team_cards{
+.team_cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 66.66%;
-    
+
 }
 
-.team_card{
+.team_card {
     flex: 0 0 33.3333%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4em 0 4em 0 ;
+    padding: 4em 0 4em 0;
     width: 300px;
     height: 300px;
 
 }
-.team_img{
+
+.team_img {
     padding-bottom: 1em;
 }
-.team_img img{
+
+.team_img img {
     width: 33.333%;
     border-radius: 50%;
 }
 
-.team_card_content p:nth-child(1){
-    font-size: 1.5em;
-    font-weight: 300;
+.team_card_content p:nth-child(1) {
     color: var(--dark-grey);
 }
-.team_card_content p:nth-child(2){
-    color: var(--light-green);
-}
-.team_card_content p:nth-child(3){
+
+.team_card_content p:nth-child(2) {
     color: var(--light-green);
 }
 
-.team_card_content a{
+.team_card_content p:nth-child(3) {
+    color: var(--light-green);
+}
+
+.team_card_content a {
     color: var(--dark-green);
-    text-decoration: none;
     margin-top: 1em;
 }
-.team_card_content{
+
+.team_card_content {
     display: flex;
     flex-direction: column;
     gap: .1em;
 }
 
-.container_team_banner{
+.container_team_banner {
     display: flex;
     flex-direction: column;
 }
 
-.container_contact{
+.container_contact {
     display: flex;
     text-align: center;
     margin-top: 2em;
@@ -482,53 +489,151 @@ color: var(--dark-green);
     color: var(--white);
 }
 
-.container_contact h2{
+.container_contact h2 {
     font-size: 3em;
     padding-bottom: 1em;
     padding-top: 1em;
     margin: auto;
 }
-.container_contact p{
-    font-size: 1em;
-    font-weight: 300;
+
+.container_contact p {
     width: 50%;
-   margin: auto;
-    
+    margin: auto;
+
 }
 
-.container_contact_info{
+.container_contact img:nth-child(1) {
+    transform: rotate(250deg) translate(-100px, 300px);
+    opacity: 50%;
+}
+
+.container_contact img:nth-child(3) {
+    transform: rotate(100deg)translate(50px, 300px);
+    opacity: 50%;
+}
+
+.container_contact_info {
     display: flex;
+    flex: 1;
     background-color: var(--dark-grey);
     justify-content: center;
 }
 
-.container_middle{
+.container_middle {
     display: flex;
     flex: 1;
     flex-direction: column;
     background-color: var(--white);
-    align-items: flex-start;
+    color: var(--dark-grey);
     justify-content: center;
+    padding-left: 3em;
 }
-.container_middle_content{
-    padding: 3em;
+
+.container_middle_content {
+    margin-top: 1em;
 }
+
 .container_contact_info p {
-   padding: .2em;
-
-}
-.container_contact_info h3, .container_contact_info h4{
- padding: 1em;
- font-size: 2.5em;
+    padding: .3em;
 }
 
-.container_right{
+.container_contact_info h3,
+.container_contact_info h4 {
+    font-size: 2.5em;
+}
+
+.container_contact_info h3 {
+    color: var(--dark-green);
+}
+
+.container_right {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     background-color: var(--dark-green);
+    color: var(--white);
+    padding-left: 3em;
+}
 
+.container_right h4 {
+    padding-bottom: .5em;
+}
+
+.baerekraft_cards{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10em;
+
+}
+.baerekraft_card_top{
+    display: flex  ;
+    flex-direction: row;
+    gap: .5em;
+
+
+}
+.baerekraft_card_top .baerekraft_card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+}
+.baerekraft_card_top .baerekraft_card:nth-child(1){
+    text-align: right;
+    background-color: var(--dark-green);
+    color: var(--white);
+    
+}
+.baerekraft_card_top .baerekraft_card:nth-child(2){
+ text-align: left;
+ color: var(--dark-green);
+    
+}
+.baerekraft_card_top .baerekraft_card:nth-child(1) p{
+    width: 500px;
+    align-self: flex-end;
+
+}
+.baerekraft_card_top .baerekraft_card:nth-child(2) p{
+    width: 500px;
+    align-self: flex-start;
+
+}
+
+.image_blur{
+    background-image: url("/images/bærekraft_1.png");
+overflow: hidden;
+background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+}
+.baerekraft_card_content{
+    display: flex;
+    flex-direction: row;
+   
+}
+.baerekraft_card_content .content
+{
+    backdrop-filter: blur(15px);
+    flex: 1;
+    height: 500px;
+}
+
+.baerekraft_card_content .content h3,p
+{
+  padding: 2em;
+}
+
+.baerekraft_card_content .content_empty
+{
+    flex: 1;
+}
+
+.baerekraft_card{
     color: var(--white);
 }
