@@ -563,7 +563,6 @@ footer {
 .baerekraft_cards{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10em;
 
 }
 .baerekraft_card_top{
@@ -578,8 +577,8 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 2em;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 10em;
+    padding-bottom: 10em;
 
 }
 .baerekraft_card_top .baerekraft_card:nth-child(1){
@@ -605,11 +604,27 @@ footer {
 }
 
 .image_blur{
+    overflow: hidden;
+    background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+}
+
+.baerekraft_card:nth-child(2) .image_blur{
     background-image: url("/images/bærekraft_1.png");
-overflow: hidden;
-background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+
+
+}
+
+.baerekraft_card:nth-child(3) .image_blur{
+    background-image: url("/images/bærekraft_2.png");
+
+
+}
+
+.baerekraft_card:nth-child(4) .image_blur{
+    background-image: url("/images/bærekraft_3.png");
+
 
 }
 .baerekraft_card_content{
@@ -621,14 +636,22 @@ background-repeat: no-repeat;
 {
     backdrop-filter: blur(15px);
     flex: 1;
-    height: 500px;
+    height: 600px;
+    align-content: center;
+    background-color: #202b2012;
 }
 
-.baerekraft_card_content .content h3,p
+.baerekraft_card_content .content p
 {
+    
   padding: 2em;
+  padding-top: 0;
 }
+.baerekraft_card_content .content h2,h3,h4,h5
+{
+  padding: 1em;
 
+}
 .baerekraft_card_content .content_empty
 {
     flex: 1;
