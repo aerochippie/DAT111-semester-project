@@ -616,19 +616,19 @@ footer {
 }
 
 .baerekraft_card:nth-child(2) .image_blur {
-    background-image: url("/images/bærekraft_1.png");
+    background-image: url("../images/bærekraft_1.png");
 
 
 }
 
 .baerekraft_card:nth-child(3) .image_blur {
-    background-image: url("/images/bærekraft_2.png");
+    background-image: url("../images/bærekraft_2.png");
 
 
 }
 
 .baerekraft_card:nth-child(4) .image_blur {
-    background-image: url("/images/bærekraft_3.png");
+    background-image: url("../images/bærekraft_3.png");
 
 
 }
@@ -839,4 +839,70 @@ footer {
 
 .ind_wrapper h1{
     padding: 0;
+}
+.beskrivelse{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    margin: 5em;
+    color: var(--dark-green);
+}
+.title h2{
+    font-weight: 300;
+}
+
+.beskrivelse-top{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2em;
+    align-items: center;
+}
+
+.beskrivelse-top .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.beskrivelse-top h3{
+    text-align: center;
+    font-weight: 400;
+    color: var(--dark-green);
+
+}
+
+.beskrivelse-top p{
+
+}
+
+.beskrivelse-top img{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    margin: 6em 0 8em 0;
+
+}
+
+.beskrivelse .images img{
+    width: 66%;
+}
+
+.images h4{
+    font-weight: 400;
+    color: var(--dark-green);
+    padding: 1em 0 1em 0;
+}
+
+.images p {
+    width: 80%;
+    margin: 2em 0 2em 0;
 }
